@@ -1,0 +1,55 @@
+<!--
+last updated 2015-06-03 toby
+-->
+<h3>Read this sentence:</h3>
+
+<div class="formatted_sentence">
+{{form_sent}}
+</div>
+
+<ul>
+  <li>{{form_sub_text}} is officially known as "{{subject_pref_name}}", which is a kind of "{{subject_stype_name}}".</li>
+  <li>{{form_obj_text}} is officially known as "{{object_pref_name}}", which is a kind of "{{object_stype_name}}".</li>
+</ul>
+
+<ul>
+  <li>"<strong>{{subject_stype_name}}</strong>" can be defined as:<br>
+  {{subject_stype_desc}}</li>
+  <li>"<strong>{{object_stype_name}}</strong>" can be defined as:<br>
+  {{object_stype_desc}}</li>
+</ul>
+
+<!-- start of questions -->
+
+<cml:radios name="crowd_relation_type" validates="required"
+  label="According to the sentence:">
+
+  <cml:radio value="physically_related"
+    label="{{form_sub_text}} is physically a part of {{form_obj_text}}"/>
+
+  <cml:radio value="spatially_related"
+    label="{{form_sub_text}} is the location of {{form_obj_text}}"/>
+
+  <cml:radio value="temporally_related"
+    label="{{form_sub_text}} comes before {{form_obj_text}} in time"/>
+
+  <cml:radio value="functionally_related"
+    label="{{form_sub_text}} is a process of, positively or negatively affects, or brings about {{form_obj_text}}"/>
+
+  <cml:radio value="conceptually_related"
+    label="{{form_sub_text}} is a type of, given to, or occurs together with {{form_obj_text}}"/>
+
+  <cml:radio value="other"
+    label="None of the above"/>
+
+</cml:radios>
+
+<cml:radios name="user_confidence" validates="required"
+  label="How confident are you in your answer?">
+  <cml:radio value="very_confident" label="Very confident"/>
+  <cml:radio value="confident" label="Confident"/>
+  <cml:radio value="not_very_confident" label="Not very confident"/>
+</cml:radios>
+
+
+<cml:textarea name="comments" label="Comments? (optional)"/>

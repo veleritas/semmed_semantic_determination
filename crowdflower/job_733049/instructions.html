@@ -1,0 +1,95 @@
+<!--
+last updated 2015-06-03 toby
+
+In this job, we want to test to see if the crowd can determine
+the type of semantic relationship that joins two concepts.
+We are showing them only those concept pairs from the SemMedDB gold
+standard which were determined by expert annotators to be
+involved in a predication.
+
+Therefore, this task tries to measure only the semantic
+relationship. Precision and recall are dealt with in other
+tasks.
+
+Finally, the 5 choices provided loosely represent the five major
+semantic categories of the UMLS semantic network. The choices
+are filtered down dramatically based on the kinds of predicates
+which actually are used in SemMedDB (e.g., there are 9 predicates
+under "physically related to", but here the only choice is
+"part of", since that is the only predicate used by SemMedDB.
+-->
+
+Title: Determining how one concept is related to another
+
+
+<h3>Overview</h3>
+<p>In this task, you will be helping scientists determine what kind of relationship exists between two biomedical concepts according to a sentence.</p>
+
+
+<h3>The Task</h3>
+<ol>
+  <li>Read a given sentence. Two concepts, the <span class="subject_text">subject</span> and the <span class="object_text">object</span> have been highlighted in the sentence. The definitions of the concepts are provided for your reference.</li>
+  <li>Determine what the sentence says about how the <span class="subject_text">subject</span> is related to the <span class="object_text">object</span>.</li>
+  <li>Rate how confident you are in your answer.</li>
+</ol>
+
+
+<h3>Examples</h3>
+
+<ol>
+  <li>[<span class="subject_text">subject</span>] is physically a part of [<span class="object_text">object</span>]:<br>
+    <ul>
+      <li>The <span class="subject_text">mitochondria</span>, which is found in the cytoplasm of a <span class="object_text">cell</span>, is responsible for generating the cell's energy.</li>
+    </ul>
+  </li>
+
+
+  <li>[<span class="subject_text">subject</span>] is the location of [<span class="object_text">object</span>]:<br>
+
+    <ul>
+      <li>The <span class="subject_text">ribosome</span> is the cellular organelle where <span class="object_text">protein synthesis</span> occurs.</li>
+
+    </ul>
+  </li>
+
+
+  <li>[<span class="subject_text">subject</span>] comes before [<span class="object_text">object</span>] in time:<br>
+    <ul>
+      <li>Patients suffering from Barbett's syndrome first received <span class="subject_text">acupuncture</span> prior to a follow up <span class="object_text">MRI</span>.</li>
+    </ul>
+
+  </li>
+
+  <li>[<span class="subject_text">subject</span>] is a process of, positively or negatively affects, or brings about [<span class="object_text">object</span>]:<br>
+
+    <ul>
+      <li>Homeostasis, the set of all processes which maintain a constant internal environment for an organism, is evidently not unique to just humans.</li>
+      <li>Runners with <span class="subject_text">fractures</span> suffer a dramatic decrease in their <span class="object_text">running ability</span>.</li>
+
+      <li>The protein <span class="subject_text">p53</span> is one of the best implicated factors involved in <span class="object_text">cancer</span>.</li>
+
+    </ul>
+
+  </li>
+
+
+  <li>
+    [<span class="subject_text">subject</span>] is a type of, given to, or occurs together with [<span class="object_text">object</span>]:
+    <ul>
+      <li><span class="subject_text">Crohn's disease</span>, an <span class="object_text">autoimmune disorder</span> where the immune system attacks the gastrointestinal tract, currently has no cure.</li>
+
+      <li>While <span class="subject_text">flobantimab</span> is frequently perscribed to <span class="object_text">diabetic patients</span>, whether the drug actually has any effect is unknown.</li>
+
+      <li>For a long time, doctors have observed that patients with <span class="object_text">hair loss</span> also have <span class="subject_text">persistent coughs</span>, but why this is the case is unknown.</li>
+    </ul>
+  </li>
+
+</ol>
+
+
+
+<h3>Making your judgement</h3>
+Please base your answers on what is stated in the provided sentence.
+
+<h3>Thank you!</h3>
+<p>Thank you for helping us with this task! Your responses are being used to guide cutting-edge biomedical research. Please email tongli@scripps.edu if you have any questions.</p>
